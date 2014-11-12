@@ -1,0 +1,5 @@
+language: node_js
+install: npm install eslint jshint -g
+script:
+- jshint horo-nope.user.js
+- eslint horo-nope.user.js
