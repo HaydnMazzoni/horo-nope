@@ -70,6 +70,6 @@ if (isAbc) {
 } else if (isNewsCorp) {
   $('a[href="/lifestyle/horoscopes"]').parent('li').remove();
 } else if (isFairfax) {
-  $('a[href*="/horoscopes"]').parent('li').remove();
+  $('a[href*="/horoscopes"], a[href="/lifestyle/horoscope"]').parent('li').remove();
   $('[data-ga-action="Horoscopes Click"], .cS-horoscopes').remove();
 }
