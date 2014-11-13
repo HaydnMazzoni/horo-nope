@@ -23,6 +23,7 @@
 // @include       http://*.theage.com.au/*
 // @include       http://*.watoday.com.au/*
 // @include       http://*.brisbanetimes.com.au/*
+// @include       http://*.ninemsn.com.au/*
 // @grant         none
 // ==/UserScript==
 
@@ -65,6 +66,8 @@ var isNewsCorp = h === "www.news.com.au" ||
   h === "www.cairnspost.com.au" ||
   h === "www.weeklytimesnow.com.au";
 
+var isNineMsn = h.contains('ninemsn.com.au');
+
 if (isAbc) {
   $('a[href*="/religion/"]').parent('li').remove();
 } else if (isNewsCorp) {
@@ -72,4 +75,6 @@ if (isAbc) {
 } else if (isFairfax) {
   $('a[href*="/horoscopes"], a[href="/lifestyle/horoscope"]').parent('li').remove();
   $('[data-ga-action="Horoscopes Click"], .cS-horoscopes').remove();
+} else if (isNineMsn) {
+  $('a[href*="astrosurf.ninemsn.com.au"]').parent('dd').remove();
 }
