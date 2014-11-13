@@ -77,4 +77,5 @@ if (isAbc) {
   $('[data-ga-action="Horoscopes Click"], .cS-horoscopes').remove();
 } else if (isNineMsn) {
   $('a[href*="astrosurf.ninemsn.com.au"]').parent('dd').remove();
+  $('#horomain').closest('div:not(#horomain)').remove();
 }
