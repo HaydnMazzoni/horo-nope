@@ -76,6 +76,6 @@ if (isAbc) {
   $('a[href*="/horoscopes"], a[href="/lifestyle/horoscope"]').parent('li').remove();
   $('[data-ga-action="Horoscopes Click"], .cS-horoscopes').remove();
 } else if (isNineMsn) {
-  $('a[href*="astrosurf.ninemsn.com.au"]').parent('dd').remove();
+  $('a[href*="astrosurf.ninemsn.com.au"]').parent('dd, li').remove();
   $('#horomain').closest('div:not(#horomain)').remove();
 }
