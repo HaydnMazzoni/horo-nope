@@ -1,7 +1,9 @@
 // ==UserScript==
 // @name          Horo-nope
 // @namespace     http://danielnixon.org
+// @version       0.1
 // @description   Removes horoscopes and other woo from Australian news websites.
+// @author        Daniel Nixon
 // @include       http://www.abc.net.au/*
 // @include       http://*.abccommercial.com/*
 // @include       http://*.abcmusic.com.au/*
