@@ -27,6 +27,7 @@
 // @include       http://*.brisbanetimes.com.au/*
 // @include       http://*.ninemsn.com.au/*
 // @include       https://au.yahoo.com/*
+// @include       https://au.news.yahoo.com/*
 // @grant         none
 // ==/UserScript==
 
@@ -79,7 +80,7 @@ var isNewsCorp = h === 'www.news.com.au' ||
 
 var isNineMsn = h.contains('ninemsn.com.au');
 
-var isYahoo = h.contains('au.yahoo.com');
+var isYahoo = h.contains('yahoo.com');
 
 if (isAbc) {
   $('a[href*="/religion/"]').parent('li').remove();
@@ -92,6 +93,6 @@ if (isAbc) {
   $('a[href*="astrosurf.ninemsn.com.au"]').parent('dd, li').remove();
   $('#horomain').closest('div:not(#horomain)').remove();
 } else if (isYahoo) {
-  $('a[href="https://au.lifestyle.yahoo.com/horoscopes/"]').parent('li').remove();
+  $('a[href*="/horoscopes/"]').parent('li').remove();
   $('.horoscope').remove();
 }
