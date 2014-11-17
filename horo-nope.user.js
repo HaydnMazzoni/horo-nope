@@ -28,6 +28,7 @@
 // @include       http://*.ninemsn.com.au/*
 // @include       https://au.yahoo.com/*
 // @include       https://au.news.yahoo.com/*
+// @include       https://au.tv.yahoo.com/*
 // @grant         none
 // ==/UserScript==
 
@@ -93,6 +94,7 @@ if (isAbc) {
   $('a[href*="astrosurf.ninemsn.com.au"]').parent('dd, li').remove();
   $('#horomain').closest('div:not(#horomain)').remove();
 } else if (isYahoo) {
+  $('a[href="//au.lifestyle.yahoo.com/horoscopes/"]').remove();
   $('a[href*="/horoscopes/"]').parent('li').remove();
   $('.horoscope').remove();
 }
