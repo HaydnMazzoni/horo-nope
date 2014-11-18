@@ -25,6 +25,7 @@
 // @include       http://*.theage.com.au/*
 // @include       http://*.watoday.com.au/*
 // @include       http://*.brisbanetimes.com.au/*
+// @include       http://*.dailylife.com.au/*
 // @include       http://*.ninemsn.com.au/*
 // @include       https://au.yahoo.com/*
 // @include       https://au.news.yahoo.com/*
@@ -65,6 +66,8 @@ var isFairfax = h === 'www.smh.com.au' ||
   h === 'www.watoday.com.au' ||
   h === 'www.brisbanetimes.com.au';
 
+var isDailyLife = h.contains('dailylife.com.au');
+
 var isNewsCorp = h === 'www.news.com.au' ||
   h === 'www.adelaidenow.com.au' ||
   h === 'www.couriermail.com.au' ||
@@ -90,6 +93,8 @@ if (isAbc) {
 } else if (isFairfax) {
   $('a[href*="/horoscopes"], a[href="/lifestyle/horoscope"]').parent('li').remove();
   $('[data-ga-action="Horoscopes Click"], .cS-horoscopes').remove();
+} else if (isDailyLife) {
+  $('a[href*="/life-and-love/horoscopes"]').parent('li').remove();
 } else if (isNineMsn) {
   $('a[href*="astrosurf.ninemsn.com.au"]').parent('dd, li').remove();
   $('#horomain').closest('div:not(#horomain)').remove();
