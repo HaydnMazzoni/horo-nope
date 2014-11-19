@@ -1,3 +1,3 @@
 language: node_js
-install: npm install eslint jshint -g
+install: npm install jslint eslint jshint -g
 script: make
