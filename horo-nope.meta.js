@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          Horo-nope
 // @namespace     http://danielnixon.org
-// @version       0.1.3
+// @version       0.1.4
 // @description   Removes horoscopes and other woo from Australian news websites.
 // @author        Daniel Nixon
 // @downloadURL   https://github.com/danielnixon/horo-nope/raw/master/horo-nope.user.js

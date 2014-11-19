@@ -51,6 +51,8 @@ function nope() {
   if (isAbc) {
     $('a[href*="/religion/"]').parent('li').remove();
   } else if (isNewsCorp) {
+    $('.horoscopes-promo').remove();
+    $('.horoscope-summary').parent('.item').remove();
     $('a[href*="/lifestyle/horoscopes"]').parent('li').remove();
   } else if (isFairfax) {
     $('a[href*="/horoscopes"], a[href="/lifestyle/horoscope"]').parent('li').remove();
