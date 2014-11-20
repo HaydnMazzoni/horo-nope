@@ -1,4 +1,4 @@
-[](icon.png)Horo-nope [![Build Status](https://travis-ci.org/danielnixon/horo-nope.svg?branch=master)](https://travis-ci.org/danielnixon/horo-nope)
+![](icon.png)Horo-nope [![Build Status](https://travis-ci.org/danielnixon/horo-nope.svg?branch=master)](https://travis-ci.org/danielnixon/horo-nope)
 =========
 
 A userscript to remove horoscopes and other woo from Australian news websites.
