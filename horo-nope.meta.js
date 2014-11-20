@@ -6,6 +6,7 @@
 // @author        Daniel Nixon
 // @downloadURL   https://github.com/danielnixon/horo-nope/raw/master/horo-nope.user.js
 // @updateURL     https://github.com/danielnixon/horo-nope/raw/master/horo-nope.meta.js
+// @icon          https://github.com/danielnixon/horo-nope/raw/master/icon.png
 // @include       http://www.abc.net.au/*
 // @include       http://*.abccommercial.com/*
 // @include       http://*.abcmusic.com.au/*
